@@ -1,0 +1,217 @@
+.App {
+  text-align: center;
+  /* background-image: url('./bug\ tracking\ image.jpg'); */
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.SideNavBar{
+  height: 100%;
+  width: 250px;
+  background-color: #343a40;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.side{
+  position: fixed;     /* Fixed Sidebar (stay in place on scroll and position relative to viewport) */
+  height: 100%;
+  width: 75px;     /* Set the width of the sidebar */
+  z-index: 1;      /* Stay on top of everything */
+  top: 3.4em;      /* Stay at the top */
+  background-color: #222; /* Black */
+  overflow-x: hidden;     /* Disable horizontal scroll */
+  padding-top: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  
+  padding: 10px;
+}
+
+.grid-item {
+  
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.item1 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.bg_image{
+  background-image: url('./background.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.page-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap{
+  flex: 1;
+}
+
+.login-back{
+  /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
+  background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 63%, rgba(255,255,255,1) 100%);
+  transform: translate(0%,30%);
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 2px 2px 9px 2px rgb(48, 18, 32);
+  width: 400px;
+  height: 350px;
+  padding: 25px;
+  margin-left: auto;
+  justify-content: space-around;
+  
+}
+
+.text-left{
+  display: flex;
+  float: right;
+}
+
+.bg_image_home{
+  /* background-image: url('./bug\ tracking\ image.jpg'); */
+  position: relative;
+  width: 70vw;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  /* background-color: darkgray; */
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  /* background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 63%, rgba(255,255,255,1) 100%); */
+  transform: translate(0%,10%);
+  border-radius: 20px;
+  box-shadow: 2px 2px 9px 2px rgb(48, 18, 32);
+  margin-left: auto;
+  justify-content: space-around;
+  margin: auto;
+  
+}
+
+.progress-bar {
+  background-color: whiteSmoke;
+  border-radius: 2px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
+
+  width: 250px;
+  height: 20px;
+  
+  position: relative;
+  display: block;
+}
+  
+.progress-bar > span {
+  background-color: rgb(85, 50, 79);
+  border-radius: 2px;
+
+  display: block;
+  text-indent: -9999px;
+}
+
+
+progress[value]  {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of default border in Firefox. */
+  /* border: none; */
+  box-sizing: border-box;
+
+  /* Dimensions */
+  width: 350px;
+  height: 15px;
+
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .25), 
+	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(left, #09c, #f44);
+
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+
+    /*This sets up the animation */
+  -webkit-animation: move 25s linear 0 infinite;
+          animation: move 25s linear 0 infinite;
+    
+}
+
+progress[value]::-webkit-progress-value::before {
+  content: '80%';
+  position: absolute;
+  right: 0;
+  top: -125%;
+}
+
+
+@-webkit-keyframes move {
+  0% {background-position: 0px 0px, 0 0, 0 0}
+  100% {background-position: -100px 0px, 0 0, 0 0}
+}
+
+@keyframes move {
+  0% {background-position: 0px 0px, 0 0, 0 0}
+  100% {background-position: -100px 0px, 0 0, 0 0}
+}
+
+
+
+
+  
